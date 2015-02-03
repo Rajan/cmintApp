@@ -26,6 +26,10 @@ module.exports =
 
   preloads: [
     {
+      id: "getting-started"
+      location: "source#getting-started"
+    }
+    {
       id: "learn-more"
       location: "source#learn-more"
     }
@@ -50,6 +54,22 @@ module.exports =
       location: "source#note-view"
     }
   ]
+
+  drawers:
+    left:
+      id: "drawer-content"
+      location: "drawer#content"
+      showOnAppLoad: false
+
+
+    right:
+      id: "drawer-note"
+      location: "drawer#note"
+      showOnAppLoad: false
+
+    options:
+      animation: "swingingDoor"
+
 
   # drawers:
   #   left:

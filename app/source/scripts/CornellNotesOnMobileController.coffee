@@ -3,3 +3,4 @@ angular
   .controller 'CornellNotesOnMobileController', ($scope, supersonic) ->
 
     $scope.navbarTitle = "Cornell Notes on Mobile"
+    $scope.supersonic = supersonic

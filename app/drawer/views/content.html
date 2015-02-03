@@ -1,0 +1,35 @@
+<div ng-controller="DrawerController">
+
+  <super-navbar>
+    <super-navbar-title>
+      Navigation
+    </super-navbar-title>
+  </super-navbar>
+
+  <div class="padding">
+    <br>
+      <super-navigate view-id="getting-started">
+        <button class="button button-positive button-clear" ng-click="supersonic.ui.drawers.close()">
+          Home
+        </button>
+      </super-navigate><br>
+
+      <super-navigate view-id="start-studying">
+        <button class="button button-positive button-clear" ng-click="supersonic.ui.drawers.close()">
+          Study Notes
+        </button>
+      </super-navigate><br>
+
+      <super-navigate view-id="start-studying">
+        <button class="button button-positive button-clear" ng-click="supersonic.ui.drawers.close()">
+          Study Reminders
+        </button>
+      </super-navigate><br>
+
+
+        <button class="button button-positive button-clear" ng-click="supersonic.ui.drawers.close()">
+            Close this menu
+        </button>
+        <br>
+  </div>
+</div>
