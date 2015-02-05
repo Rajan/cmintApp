@@ -3,32 +3,37 @@
 module.exports =
 
   # See styling options for tabs and other native components in app/common/native-styles/ios.css or app/common/native-styles/android.css
-  tabs: [
-    {
-      title: "Index"
-      id: "index"
-      location: "source#getting-started" # Supersonic module#view type navigation
-    }
-    {
-      title: "Settings"
-      id: "settings"
-      location: "source#settings"
-    }
-    {
-      title: "Internet"
-      id: "internet"
-      location: "http://google.com" # URLs are supported!
-    }
-  ]
+  #tabs: [
+   # {
+    #  title: "Index"
+     # id: "index"
+      #location: "source#getting-started" # Supersonic module#view type navigation
+   # }
+   # {
+   #   title: "Settings"
+   #   id: "settings"
+    #  location: "source#settings"
+    #}
+   # {
+    #  title: "Internet"
+    #  id: "internet"
+     # location: "http://google.com" # URLs are supported!
+   # }
+ # ]
 
-  # rootView:
-  #   location: "source#getting-started"
+  rootView:
+    location: "source#modalWindow1"
+
 
   preloads: [
     {
       id: "getting-started"
       location: "source#getting-started"
     }
+   # {
+    #  id: "modal-window1"
+    #  location: "source#modalWindow1"
+    #}
     {
       id: "learn-more"
       location: "source#learn-more"
