@@ -1,33 +1,37 @@
 <div ng-controller="DrawerController">
 
-  <super-navbar>
-    <super-navbar-title>
-        &#9776;&nbsp;Keys
-    </super-navbar-title>
-  </super-navbar>
+    <super-navbar>
+        <super-navbar-title>
+            &#9776;&nbsp;Keys
+        </super-navbar-title>
+    </super-navbar>
 
-  <div class="padding">
+    <div class="padding">
 
-    <b>
-        A<br><br>
-        B<br><br>
-        C<br><br>
-        D<br><br>
-        E<br><br>
-        F<br><br>
-        G<br><br>
-        H<br><br>
-        I<br><br>
-        J<br><br>
-        K<br><br>
-        L<br><br>
-    </b>
-      <button class="button button-positive button-clear" ng-click="supersonic.ui.drawers.close()">
-          Close Keys
-      </button>
-      <super-navigate ng-attr-location="/../../source/views/note-view.html#k" ng-click="supersonic.ui.drawers.close();window.location.href = '/../../source/views/note-view.html#k';">
-          <button class="button button-clear">Go to K (notworking)</button>
-      </super-navigate>
+        <b>
+            A<br><br>
+            B<br><br>
+            C<br><br>
+            D<br><br>
+            E<br><br>
+            F<br><br>
+            G<br><br>
+            H<br><br>
+            I<br><br>
+            J<br><br>
+            K<br><br>
+            L<br><br>
+        </b>
+        <button class="button button-positive button-block" ng-click="supersonic.ui.drawers.close()">
+            Play Note
+        </button>
+        <button class="button button-positive button-block" ng-click="supersonic.ui.drawers.close()">
+            Close
+        </button>
+        <super-navigate ng-attr-location="/../../source/views/note-view.html#k"
+                        ng-click="supersonic.ui.drawers.close();window.location.href = '/../../source/views/note-view.html#k';">
+            <button class="button button-clear">Go to K (notworking)</button>
+        </super-navigate>
 
-  </div>
+    </div>
 </div>
