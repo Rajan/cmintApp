@@ -58,6 +58,10 @@ module.exports =
       id: "note-view"
       location: "source#note-view"
     }
+    {
+      id: "alerts-view"
+      location: "source#alerts-view"
+    }
   ]
 
   drawers:
