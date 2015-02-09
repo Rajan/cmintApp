@@ -22,7 +22,7 @@ module.exports =
  # ]
 
   rootView:
-    location: "source#modalWindow1"
+    location: "source#getting-started"
 
 
   preloads: [
@@ -30,10 +30,10 @@ module.exports =
       id: "getting-started"
       location: "source#getting-started"
     }
-   # {
-    #  id: "modal-window1"
-    #  location: "source#modalWindow1"
-    #}
+    {
+      id: "modal-window1"
+      location: "source#modalWindow1"
+    }
     {
       id: "learn-more"
       location: "source#learn-more"
@@ -61,6 +61,34 @@ module.exports =
     {
       id: "alerts-view"
       location: "source#alerts-view"
+    }
+   # {
+   #   id: "navigation-transitions"
+   #   location: "navigation#transitions"
+   # }
+    {
+      id: "note-tooth"
+      location: "source#tooth"
+    }
+    {
+      id: "note-account"
+      location: "source#accounting"
+    }
+    {
+      id: "note-french"
+      location: "source#french"
+    }
+    {
+      id: "note-apexam"
+      location: "source#apexam"
+    }
+    {
+      id: "note-prefixes"
+      location: "source#prefixes"
+    }
+    {
+      id: "note-gre"
+      location: "source#gre-gmat"
     }
   ]
 
