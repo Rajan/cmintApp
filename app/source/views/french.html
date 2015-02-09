@@ -5,7 +5,7 @@
     </super-navbar-button>
 </super-navbar>
 
-<div class="list" ng-controller="NoteController">
+<div class="list" ng-controller="NoteController" ng-init="init();">
     <div class="item" id="numbers">
         <b>Numbers</b><br>
         1-10<br>
@@ -83,13 +83,16 @@
         <br/>
     </div>
 
-    <span id="src" style="visibility: hidden;">
+    <span id="src" style="visibility: hidden;" ng-model-options="u" >
         <noscript id="mdinp" name="mdinp">[{"left":"Numbers","right":"1-10"},{"left":"One","right":"Un/Une"},{"left":"Two","right":"Deux"},{"left":"Three","right":"Trois"},{"left":"Four","right":"Quatre"},{"left":"Five","right":"Cinq"},{"left":"Six","right":"Six"},{"left":"Seven","right":"Sept"},{"left":"Eight","right":"Huit"},{"left":"Nine","right":"Neuf"},{"left":"Ten","right":"Dix"}]</noscript>
     </span>
 
 </div>
 <script>
     var jsonvalue  = document.getElementById("src").innerHTML;
-    alert(jsonvalue);
+    var jsonlist = JSON.parse($json);
+   // jsonlist[0].left;
+    alert(jsonlist.left);
+    //alert(jsonvalue);
 
 </script>
