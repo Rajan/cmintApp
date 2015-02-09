@@ -1,11 +1,54 @@
-<super-navbar>
-    <super-navbar-title>
-        My test page
-    </super-navbar-title>
-</super-navbar>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Share QR</title>
+    <meta name="viewport" content="width=device-width,height=device-height,minimum-scale=1,maximum-scale=1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
 
-<div class="padding">
-    
-    <h3>My heading</h3>
-    <img src="images/Screen.png">
-</div> 
+
+
+</head>
+
+<body>
+
+<div data-role="page" id="article1" ng-click="performAnimation('slideFromRight')">
+    <div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+        <h1>Articles</h1>
+    </div>
+    <div data-role="content">
+        <p>Article 1</p>
+    </div>
+    <div data-role="footer" data-theme="b" data-position="fixed" data-id="footer">
+        <h1>Footer</h1>
+    </div>
+</div>
+
+<div data-role="page" id="article2">
+    <div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+        <a href="#article1" data-icon="home" data-iconpos="notext">Home</a>
+        <h1>Articles</h1>
+    </div>
+    <div data-role="content">
+        <p>Article 2</p>
+    </div>
+    <div data-role="footer" data-theme="b" data-position="fixed" data-id="footer">
+        <h1>Footer</h1>
+    </div>
+</div>
+
+<div data-role="page" id="article3">
+    <div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+        <a href="#article1" data-icon="home" data-iconpos="notext">Home</a>
+        <h1>Articles</h1>
+    </div>
+    <div data-role="content">
+        <p>Article 3</p>
+    </div>
+    <div data-role="footer" data-theme="b" data-position="fixed" data-id="footer">
+        <h1>Footer</h1>
+    </div>
+</div>
+
+</body>
+</html>
