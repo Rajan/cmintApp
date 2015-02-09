@@ -2,26 +2,26 @@ angular
     .module('source')
     .controller('NoteController', function($scope, supersonic) {
         $scope.navbarTitle = "";
-        $cope.supersonic = supersonic;
+        $scope.supersonic = supersonic;
 
-       $scope.init = function () {
-          /*  if ($routeParams.Id) {
-                //get an existing object
-            });
-        } else {
-            //create a new object
-
-        }
-
-        $scope.isSaving = false;*/
-       $window.alert('init');
-
-   var i=1;
-
-    };
         //var jsonvalue  = document.getElementById("src").innerHTML;
         //alert(jsonvalue);
 
+        $scope.renderView = function (cont1) {
+            /*  if ($routeParams.Id) {
+             //get an existing object
+             });
+             } else {
+             //create a new object
+
+             }
+
+             $scope.isSaving = false;*/
+            //$window.alert('init');
+            supersonic.ui.dialog.alert(cont1);
+            //var i=1;
+            //supersonic.logger.log('init 2');
+        };
 
     });
 /*if(i==1)
@@ -29,4 +29,3 @@ angular
 {  supersonic.ui.dialog.alert("Custom title!");
 }*/
 
-init();
