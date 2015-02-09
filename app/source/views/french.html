@@ -5,7 +5,7 @@
     </super-navbar-button>
 </super-navbar>
 
-<div class="list" id="french" ng-controller="NoteController" ng-init="renderView('something');">
+<div class="list" id="french" ng-controller="NoteController" ng-init="renderView('jason value','[{left:Numbers,right:1-10}');">
     <div class="item" id="numbers">
         <b>Numbers</b><br>
         1-10<br>
@@ -83,12 +83,13 @@
         <br/>
     </div>
 
-    <span id="cont1" style="visibility: hidden;" ng-model-options="u" >
+    <span id="cont1" style="visibility: hidden;" >
         <noscript id="mdinp" name="mdinp">[{"left":"Numbers","right":"1-10"},{"left":"One","right":"Un/Une"},{"left":"Two","right":"Deux"},{"left":"Three","right":"Trois"},{"left":"Four","right":"Quatre"},{"left":"Five","right":"Cinq"},{"left":"Six","right":"Six"},{"left":"Seven","right":"Sept"},{"left":"Eight","right":"Huit"},{"left":"Nine","right":"Neuf"},{"left":"Ten","right":"Dix"}]</noscript>
     </span>
 
 </div>
 <script>
+    var jvalue="test21";
     var jsonvalue  = document.getElementById("src").innerHTML;
     var jsonlist = JSON.parse($json);
    // jsonlist[0].left;

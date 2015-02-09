@@ -7,7 +7,12 @@ angular
         //var jsonvalue  = document.getElementById("src").innerHTML;
         //alert(jsonvalue);
 
-        $scope.renderView = function (cont1) {
+        $scope.renderView = function (title,content) {
+
+
+            $scope.title=title;
+            $scope.datas=content;
+
             /*  if ($routeParams.Id) {
              //get an existing object
              });
@@ -18,7 +23,9 @@ angular
 
              $scope.isSaving = false;*/
             //$window.alert('init');
-            supersonic.ui.dialog.alert(cont1);
+
+            supersonic.bind($scope,content);
+            supersonic.ui.dialog.alert(content);
             //var i=1;
             //supersonic.logger.log('init 2');
         };
