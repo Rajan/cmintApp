@@ -4,8 +4,8 @@
         Swipe
     </super-navbar-button>
 </super-navbar>
-
-<div class="list" ng-controller="NoteController">
+<script src="/node_modules/angular-touch/angular-touch.js"></script>
+<div class="list" ng-controller="NoteController" ng-swipe-right="swipedRight();" ng-swipe-left="swipedRight();">
     <div class="item" id="pp">
         <b>Political party</b><br>
         An organisation that seeks political power by electing people to office so that its positions and philosophy<br>

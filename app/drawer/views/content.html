@@ -7,7 +7,43 @@
   </super-navbar>
 
   <div class="padding">
-    <br>
+      <div class="list">
+
+          <a class="item item-icon-left" href="#">
+              <super-navigate view-id="getting-started" ng-click="supersonic.ui.drawers.close()">
+                  <i class="icon super-home"></i>
+                  Home
+              </super-navigate>
+          </a>
+
+          <a class="item item-icon-left" href="#">
+              <super-navigate view-id="alerts-view"  ng-click="supersonic.ui.drawers.close()">
+                  <i class="icon super-ios7-bell"></i>
+                  Alerts (23)
+              </super-navigate>
+              <span class="badge badge-positive">23</span>
+          </a>
+
+          <a class="item item-icon-left" href="#">
+              <super-navigate view-id="start-studying" ng-click="supersonic.ui.drawers.close()">
+                  <i class="icon super-cloud"></i>
+                  Study Notes
+              </super-navigate>
+          </a>
+
+          <a class="item item-icon-left" href="#">
+              <super-navigate view-id="start-studying" ng-click="supersonic.ui.drawers.close()">
+                  <i class="icon super-clock"></i>
+                  Study Reminders
+              </super-navigate>
+          </a>
+
+          <a class="item item-icon-left" href="#"  ng-click="supersonic.ui.drawers.close()">
+              <i class="icon super-arrow-left-c"></i>
+              Hide
+          </a>
+      </div>
+    <!--
       <super-navigate view-id="getting-started">
         <button class="button button-positive button-block" ng-click="supersonic.ui.drawers.close()">
           Home
@@ -36,6 +72,6 @@
         <button class="button button-positive button-block" ng-click="supersonic.ui.drawers.close()">
             Close
         </button>
-        <br>
+        <br> -->
   </div>
 </div>
