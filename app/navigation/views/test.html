@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+var arrName ='{"french":[{"left":"Numbers","right":"1-10"},+{"left":"One<br><br>","right":"Un/Une<br><br>"},+{"left":"Two<br><br>","right":"Deux<br><br>"},+{"left":"Three","right":"Trois"},+{"left":"Four","right":"Quatre"},+{"left":"Five","right":"Cinq"},{"left":"Six","right":"Six"},+{"left":"Seven","right":"Sept"},+{"left":"Eight","right":"Huit"},+{"left":"Nine","right":"Neuf"},+{"left":"Ten","right":"Dix"}]}';
+obj = JSON.parse(text);
+
+document.getElementById("test").innerHTML =
+obj.french[1].left + " " + obj.french[1].right;
+</body>
+</html>

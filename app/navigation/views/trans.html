@@ -36,7 +36,7 @@
     <br/><br/><br/>
       <p ng-click="performAnimation('slideFromRight')">hi</p-->
     <br/><br/>
-    <div class="text" id="playtext" ng-click="performAnimation('slideFromRight')" align="center" onclick="myFunction()">Click here for transition</div>
+    <!--div class="text" id="playtext" ng-click="performAnimation('slideFromRight')" align="center" onclick="myFunction()">Click here for transition</div>
 
 
 
@@ -56,7 +56,7 @@
     </div>
 <p id="demo"></p>
 
-<script>
+<!--script>
     var keynte = ["key1", "key2", "key3"];
     var note="";
     function myFunction() {
@@ -67,8 +67,91 @@
         }
 
     }
-</script>
+
+
+</script-->
+
+
+<!--script>
+    var arrnote =["One","one :Uno","Two","Two :Deux","Three","Three:Trois","Four","Four:Quatre","Five","Five:Cinq","Six","Six:Six",
+        "Seven","Seven:Sept","Eight","Eight : Huit","Nine","Nine :Neuf","Ten","Ten :Dix"];
+    var i,count=0;
+    function myFunction() {
+    for(i=0;i<arrnote.length;i++)
+    {
+
+
+       //document.getElementById("demo").innerHTML = arrnote[i];
+
+    document.write(arrnote[i]);
+   }
+    }
+    </script-->
+
+<div id="test" style="font-size:large"  ng-click="performAnimation('slideFromTop') " onclick="callArr()" align="center" ><br/>Click</div>
+<script>
+    var slideStart = 0;
+    var slideCount = 10;
+    var fl= 0,flg=0;
+    var count=0;
+    function callArr() {
+
+        document.getElementById('test').innerHTML = " ";
+        var arrName = {"Numbers":"1-10","One":"Uno", "Two":"Deux",
+            "Three":"Trois", "Four":"Quatre","Five":"Cing","Six":"Six","Seven":"Sept","Eight":"Huit","Nine":"Neuf","Ten":"Dix"
+            };
 
 
 
-</div>
+        var i = 0;
+
+        for (var flwr in arrName) {
+            if (i == slideStart) {
+
+                     //***** this will print the content using first key and data but only alternate ******
+                       if (slideStart % 2 == 0) {
+                           document.getElementById('test').innerHTML += "<b> " + flwr + "</b>";
+                           fl = flwr, flg = 1;
+
+                           count++;
+
+
+                       }
+                       else {
+                           document.getElementById('test').innerHTML += "<b>" + fl + "</b><br/><br/>  " + arrName[fl];
+                       }
+
+                     //***********
+
+                     /*
+                     * this is code print entire content one by one onclick event
+                     *   document.getElementById('test').innerHTML += "<b>" + flwr + "</b><br/><br/>  " + arrName[flwr];
+                     *
+                     * */
+
+
+
+
+
+
+                    /*document.getElementById('test').innerHTML += flwr +
+                    " <br />  " +
+                    arrName[flwr] +
+                    "<br />";
+                               */
+                slideStart++;
+                // if(flg==2)
+                // {
+                //document.getElementById('test').innerHTML+="<br/><br/>  "+ arrName[fl]; flg--;//  }
+                break;
+            }
+
+
+            i++;
+        }
+    }
+
+
+
+      </script>
+
