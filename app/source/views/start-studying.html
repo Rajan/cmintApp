@@ -1,9 +1,10 @@
+<script src="/node_modules/angular-touch/angular-touch.js"></script>
 <div ng-controller="NoteController">
   <super-navbar>
     <super-navbar-title ng-bind="navbarTitle"></super-navbar-title>
   </super-navbar>
 
-  <div class="list">
+  <div class="list" ng-swipe-right="swipedRight();">
     <super-navigate view-id="note-view">
       <li class="item item-icon-right">
         Alphabet Notes<i class="icon super-chevron-right"></i>

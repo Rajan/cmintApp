@@ -1,5 +1,5 @@
 angular
-    .module('source')
+    .module('source', ['ngTouch'])
     .controller('NoteController', function($scope, supersonic) {
         $scope.navbarTitle = "";
         $scope.supersonic = supersonic;
@@ -26,6 +26,13 @@ angular
 
             supersonic.bind($scope,content);
             supersonic.ui.dialog.alert(content);
+            //var i=1;
+            //supersonic.logger.log('init 2');
+        };
+
+        $scope.swipedRight = function () {
+
+            supersonic.ui.dialog.alert('Swiped Right!');
             //var i=1;
             //supersonic.logger.log('init 2');
         };
