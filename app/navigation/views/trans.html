@@ -88,12 +88,34 @@
     }
     </script-->
 
-<div id="test" style="font-size:large"  ng-click="performAnimation('slideFromTop') " onclick="callArr()" align="center" ><br/>Click</div>
+<div id="test" style="font-size:large"  ng-click="performAnimation('slideFromTop') " onclick="viewNext()" align="center" ><br/>Click</div>
 <script>
     var slideStart = 0;
     var slideCount = 10;
     var fl= 0,flg=0;
     var count=0;
+
+    var jsonDoc = [{"left":"Numbers","right":"1-10"},{"left":"One<br><br>","right":"Un/Une<br><br>"},{"left":"Two<br><br>","right":"Deux<br><br>"},{"left":"Three","right":"Trois"},{"left":"Four","right":"Quatre"},{"left":"Five","right":"Cinq"},{"left":"Six","right":"Six"},{"left":"Seven","right":"Sept"},{"left":"Eight","right":"Huit"},{"left":"Nine","right":"Neuf"},{"left":"Ten","right":"Dix"}];
+
+    var currentSlide = 0;
+    var secondPart = false;
+
+    function viewNext(){
+        //alert(currentSlide);
+        if(!secondPart) {
+            //alert(jsonDoc[currentSlide].left);
+            document.getElementById('test').innerHTML = jsonDoc[currentSlide].left;
+            secondPart = true;
+        }else{
+            if(currentSlide < jsonDoc.length) {
+                //alert(jsonDoc[currentSlide].left + '<br>' + jsonDoc[currentSlide].right);
+                document.getElementById('test').innerHTML = jsonDoc[currentSlide].left + '<br>' + jsonDoc[currentSlide].right;
+                currentSlide++;
+                secondPart = false;
+            }
+        }
+    }
+
     function callArr() {
 
         document.getElementById('test').innerHTML = " ";
@@ -104,7 +126,6 @@
 
 
         var i = 0;
-
         for (var flwr in arrName) {
             if (i == slideStart) {
 
@@ -145,8 +166,6 @@
                 //document.getElementById('test').innerHTML+="<br/><br/>  "+ arrName[fl]; flg--;//  }
                 break;
             }
-
-
             i++;
         }
     }
