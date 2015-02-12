@@ -90,6 +90,10 @@ module.exports =
       id: "note-gre"
       location: "source#gre-gmat"
     }
+    {
+      id: "trans"
+      location: "navigation#trans"
+    }
   ]
 
   drawers:
