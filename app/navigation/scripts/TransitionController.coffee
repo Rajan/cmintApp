@@ -14,7 +14,33 @@ angular
       supersonic.ui.animate(transitionName, options).perform()
 
 
-      keynotes=["key1","key2","key3"]
+
+    $scope.message =null
+
+    # bind it to superscope
+    supersonic.bind $scope, "message"
+
+
+
+   # broadcastMessage (msg) ->
+
+   #   message =
+    #   recipient: "showView"
+    #   message: "Hi Show view!"
+
+   #   window.postMessage message
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

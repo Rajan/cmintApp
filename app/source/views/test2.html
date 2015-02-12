@@ -1,0 +1,24 @@
+<super-navbar>
+    <super-navbar-title>
+        message test page1
+    </super-navbar-title>
+</super-navbar>
+
+
+<div ng-controller="CornellNotesOnMobileController">
+
+    <super-navigate view-id="testpage">
+        <button class="button button-block button-light icon-left ">view</button>
+    </super-navigate>
+
+
+    <h4>write here text</h4>
+
+    <input ng-model="message"/>
+
+    <h4>you wrote</h4>
+
+    <div>
+        {{message}}
+    </div>
+</div>

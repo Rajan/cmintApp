@@ -1,0 +1,33 @@
+<super-navbar>
+    <super-navbar-title>
+        test message page2
+    </super-navbar-title>
+</super-navbar>
+
+
+
+<div ng-controller="CornellNotesOnMobileController">
+    <h3>text from other webview</h3>
+
+    <div>
+        {{message}}
+    </div>
+    <script type="application/javascript">
+
+
+
+        function messageReceived(event) {
+
+            // check that the message is intended for us
+            if (event.data.recipient === "showView") {
+                alert(event.data.message);
+            }
+        }
+        window.addEventListener("message", messageReceived);
+
+
+
+    </script>
+
+</div>
+
