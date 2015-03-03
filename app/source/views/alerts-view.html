@@ -1,16 +1,63 @@
 <super-navbar>
-    <super-navbar-title ng-bind="navbarTitle">Alerts (23)</super-navbar-title>
+    <super-navbar-title ng-bind="navbarTitle">Study Reminders (7)</super-navbar-title>
     <super-navbar-button side="right">
         Clear
     </super-navbar-button>
 </super-navbar>
-<div class="list" ng-controller="NoteController">
-    <div id="a" class="item">
-        <b>A</b><br>
-        Apple<br>
-        <img style="display: block;
-    margin-left: auto;
-    margin-right: auto;" width="100px" src="/images/Apple13.jpg"><br/><br/>
-        <br/>
+<div class="list" ng-controller="NotesController">
+
+
+    <div class="item item-divider" href="#">
+        Revise Today
     </div>
+
+    <super-navigate view-id="note-view">
+        <li class="item item-icon-right">
+            Alphabet Notes<i class="icon super-chevron-right"></i>
+        </li>
+    </super-navigate>
+
+    <super-navigate view-id="note-gre">
+        <li class="item item-icon-right">
+            GRE/GMAT Vocabulary Intermediate
+            <i class="icon super-chevron-right"></i>
+        </li>
+    </super-navigate>
+
+    <super-navigate view-id="note-french">
+        <li class="item item-icon-right">
+            French numbers 1-10 <i class="icon super-chevron-right"></i>
+        </li>
+    </super-navigate>
+
+    <div class="item item-divider">
+        Revised Yesterday
+    </div>
+
+    <super-navigate view-id="note-tooth">
+        <li class="item item-icon-right">
+            Structure of Human Tooth <i class="icon super-chevron-right"></i>
+        </li>
+    </super-navigate>
+
+    <super-navigate view-id="note-apexam">
+        <li class="item item-icon-right">
+            AP Exam -Political parties
+            <i class="icon super-chevron-right"></i>
+        </li>
+    </super-navigate>
+
+    <super-navigate view-id="note-account">
+        <li class="item item-icon-right">
+            Accounting Constraints & Concepts <i class="icon super-chevron-right"></i>
+        </li>
+    </super-navigate>
+
+    <super-navigate view-id="note-prefixes">
+        <li class="item item-icon-right">
+            Prefixes
+            <i class="icon super-chevron-right"></i>
+        </li>
+    </super-navigate>
+
 </div>

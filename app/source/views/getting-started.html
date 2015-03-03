@@ -1,33 +1,77 @@
+<script>
+    supersonic.ui.navigationBar.hide();
+    supersonic.ui.navigationBar.setStyle("height: 0px;").then(function() {
+        supersonic.logger.log("Navigation bar style was set.");
+    });
+</script>
 <div class="padding">
   <br/>
   <img style="display: block;
     margin-left: auto;
     margin-right: auto;" src="/images/logo.png"><br/>
-  <p class="text-center" style="font-size: medium;">Classmint App helps to study-on-the-go! <br/> We'll study in a new fun and exciting way.</p>
+  <p class="text-center" style="font-size: medium;">Classmint App helps to study-on-the-go! </p>
   <br/>
 
-  <super-navigate view-id="cornell-notes-on-mobile">
-    <button class="button button-block button-light icon-left super-university">Introduction</button>
-  </super-navigate>
+    <div class="list">
 
- <!-- <super-navigate view-id="auto-sync-notes">
-    <button class="button button-block button-light icon-left super-cloud">Sync Notes with Mobile Phone</button>
-  </super-navigate>
+        <a class="item item-icon-left" href="#">
+            <super-navigate view-id="cornell-notes-on-mobile" ng-click="supersonic.ui.drawers.close()">
+                <i class="icon super-university"></i>
+                App Tour
+            </super-navigate>
+        </a>
 
-  <super-navigate view-id="using-the-scanner">
-    <button class="button button-block button-light icon-left super-wand">Making Most of Classmint</button>
-  </super-navigate>
+        <a class="item item-icon-left" href="#">
+            <super-navigate view-id="alerts-view"  ng-click="supersonic.ui.drawers.close()">
+                <i class="icon super-clock"></i>
+                Study Reminders
 
-  <super-navigate view-id="learn-more">
-    <button class="button button-block button-light icon-left super-android-alarm">Study Reminders</button>
-  </super-navigate>-->
+            </super-navigate>
+            <span class="badge badge-positive">7</span>
+        </a>
+
+        <a class="item item-icon-left" href="#">
+            <super-navigate view-id="start-studying" ng-click="supersonic.ui.drawers.close()">
+                <i class="icon super-cloud"></i>
+                Study Notes
+            </super-navigate>
+        </a>
+
+        <a class="item item-icon-left" href="#">
+            <super-navigate view-id="start-studying" ng-click="supersonic.ui.drawers.close()">
+                <i class="icon super-ios7-bell"></i>
+                Alerts
+            </super-navigate>
+        </a>
+
+        <a class="item item-icon-left" href="#"  ng-click="supersonic.ui.drawers.close()">
+            <i class="icon super-headphone"></i>
+            Support
+        </a>
+
+        <!--
+          <super-navigate view-id="cornell-notes-on-mobile">
+            <button class="button button-block button-light icon-left super-university">Introduction</button>
+          </super-navigate>
+
+         <super-navigate view-id="auto-sync-notes">
+            <button class="button button-block button-light icon-left super-cloud">Sync Notes with Mobile Phone</button>
+          </super-navigate>
+
+          <super-navigate view-id="using-the-scanner">
+            <button class="button button-block button-light icon-left super-wand">Making Most of Classmint</button>
+          </super-navigate>
+
+          <super-navigate view-id="learn-more">
+            <button class="button button-block button-light icon-left super-android-alarm">Study Reminders</button>
+          </super-navigate>
     <super-navigate view-id="alerts-view">
         <button class="button button-block button-light icon-left super-android-alarm">My Alerts (23)</button>
     </super-navigate>
 
   <super-navigate view-id="start-studying">
     <button class="button button-block button-light icon-left super-arrow-right-a">My Study Notes</button>
-  </super-navigate>
+  </super-navigate>-->
 
   <br/>
   <h3>Get in touch with us!</h3>
