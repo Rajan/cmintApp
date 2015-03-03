@@ -8,30 +8,31 @@
 
     <div class="padding">
 
-        <b>
-            A<br><br>
-            B<br><br>
-            C<br><br>
-            D<br><br>
-            E<br><br>
-            F<br><br>
-            G<br><br>
-            H<br><br>
-            I<br><br>
-            J<br><br>
-            K<br><br>
-            L<br><br>
+        <div class="list">
+            <a class="item" href="#"><b>A</b></a>
+            <a class="item" href="#"><b>B</b></a>
+            <a class="item" href="#"><b>C</b></a>
+            <a class="item" href="#"><b>D</b></a>
+            <a class="item" href="#"><b>E</b></a>
+            <a class="item" href="#"><b>F</b></a>
+            <a class="item" href="#"><b>G</b></a>
+            <a class="item" href="#"><b>H</b></a>
+            <a class="item" href="#"><b>I</b></a>
+            <a class="item" href="#"><b>J</b></a>
+            <a class="item" href="#"><b>K</b></a>
+            <a class="item" href="#"><b>L</b></a>
+        </div>
 
-           <!-- {{text}}
+
+        <!-- {{text}}
             {{data3}} -->
 
-        </b>
-        <super-navigate view-id="trans">
-            <button class="button button-positive button-block">
+        <super-navigate view-id="trans" style="margin-right: 20px;">
+            <button class="button button-positive">
                 Play Note
             </button>
         </super-navigate>
-        <button class="button button-positive button-block" ng-click="supersonic.ui.drawers.close()">
+        <button class="button button-positive" ng-click="supersonic.ui.drawers.close()">
             Close
         </button>
         <super-navigate ng-attr-location="/../../source/views/note-view.html#k"
