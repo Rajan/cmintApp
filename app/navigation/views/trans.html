@@ -2,10 +2,13 @@
     <super-navbar-title>
         French Numbers
     </super-navbar-title>
+    <super-navbar-button side="right" onclick="reset();">
+        Reset
+    </super-navbar-button>
 </super-navbar>
 
 <!--script src="http://ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-touch.js"></script-->
-<div class="padding" ng-controller="TransitionController">
+<div ng-controller="TransitionController">
 
     <!--div class="list">
 
@@ -88,7 +91,8 @@
     }
     </script-->
 
-<div id="test" style="font-size:large"  onclick="viewNext()" align="center" ><br/>Click</div>
+<div id="test" style="font-size:large; height: 100%; width: 100%;min-height: 300px;min-width: 300px;"  onclick="viewNext()" align="center" ><br/>Click</div>
+
 <script>
     var slideStart = 0;
     var slideCount = 10;
@@ -114,6 +118,28 @@
                 secondPart = false;
             }
         }
+    }
+
+    function viewPrev(){
+        //alert(currentSlide);
+        if(!secondPart) {
+            //alert(jsonDoc[currentSlide].left);
+            document.getElementById('test').innerHTML = jsonDoc[currentSlide-1].left;
+            secondPart = true;
+            currentSlide--;
+        }else{
+            if(currentSlide < jsonDoc.length) {
+                //alert(jsonDoc[currentSlide].left + '<br>' + jsonDoc[currentSlide].right);
+                document.getElementById('test').innerHTML = jsonDoc[currentSlide-1].left + '<br>' + jsonDoc[currentSlide-1].right;
+                secondPart = false;
+            }
+        }
+    }
+
+    function reset(){
+        currentSlide = 0;
+        var secondPart = false;
+        document.getElementById('test').innerHTML = jsonDoc[currentSlide].left;
     }
 
     function callArr() {
@@ -174,3 +200,9 @@
 
       </script>
 
+<button class="button button-positive" style="margin-left: 0px; margin-bottom: 0px;float: left;height: 75px;width: 75px;" onclick="viewPrev()">
+    Prev
+</button>
+<button class="button button-positive" style="margin-right: 0px; margin-bottom: 0px;float: right;height: 75px;width: 75px;" onclick="viewNext()">
+    Next
+</button>
